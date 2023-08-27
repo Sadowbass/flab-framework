@@ -27,8 +27,6 @@ public class DefaultBeanFactory implements BeanFactory {
 
         create();
         clearTargets();
-
-        namedBeans.entrySet().forEach(System.out::println);
     }
 
     private void fillTargetMap(Class<?> target, TargetBean targetBean) {
